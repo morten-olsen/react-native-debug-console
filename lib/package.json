@@ -1,0 +1,16 @@
+{
+  "name": "react-native-debug-console",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "react-native-json-tree": "^1.2.0",
+    "styled-components": "^3.4.2"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.4.2",
+    "react-native": "^0.56.0"
+  },
+  "devDependencies": {}
+}
