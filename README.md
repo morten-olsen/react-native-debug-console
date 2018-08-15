@@ -2,7 +2,7 @@
 
 A network and console debug component and modal for `react native` purely in JavaScript
 
-[[demo]](https://expo.io/@mortenolsen/demo)
+[[demo]](https://expo.io/@mortenolsen/demo) [[snack]](https://snack.expo.io/@mortenolsen/react-native-debug-console)
 
 ![screen](docs/assets/screen1.PNG)
 
