@@ -4,7 +4,7 @@ A network and console debug component and modal for `react native` purely in Jav
 
 [[demo]](https://expo.io/@mortenolsen/demo)
 
-![screen](docs/assets/screen1.png)
+![screen](docs/assets/screen1.PNG)
 
 ## Installation
 
