@@ -10,6 +10,7 @@ module.exports = {
       'react-native',
       'react',
       'prop-types',
+      'styled-components',
       'react-native-json-tree',
     ];
   },

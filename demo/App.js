@@ -19,63 +19,88 @@ network.attach();
 log.attach();
 
 console.log('fooo');
+let xhr = new XMLHttpRequest();
+xhr.open('GET', 'https://google.com');
+xhr.send();
+xhr = new XMLHttpRequest();
+xhr.open('GET', 'https://google.com/sdfsfsdfsfdf');
+xhr.send();
+
+const t = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    throw new Error('everything is broken');
+  }, 1000);
+});
 
 export default class App extends React.Component {
   render() {
     return (
       <SafeAreaView style={styles.container}>
         <KeyboardAvoidingView style={styles.wrapper} behavior="padding">
-          <Button
-            style={styles.button}
-            title="Console log"
-            onPress={() => {
-              console.log('hello');
-            }}
-          />
-          <View style={{ height: 10 }} />
-          <Button
-            title="GET XHR"
-            style={styles.button}
-            onPress={() => {
-              const xhr = new XMLHttpRequest();
-              xhr.open('GET', 'https://google.com');
-              xhr.send();
-            }}
-          />
-          <View style={{ height: 10 }} />
-          <Button
-            title="POST XHR"
-            style={styles.button}
-            onPress={() => {
-              const xhr = new XMLHttpRequest();
-              xhr.open('POST', 'https://google.com');
-              xhr.setRequestHeader('content-type', 'application/json');
-              xhr.send(JSON.stringify({
-                hello: 'world',
-              }));
-            }}
-          />
-          <View style={{ height: 10 }} />
-          <Button
-            title="Break"
-            style={styles.button}
-            onPress={() => {
-              const err = new Error('some error');
-              throw err;
-            }}
-          />
-          <View style={{ height: 30 }} />
-          <Button
-            title="Show"
-            style={styles.button}
-            onPress={() => {
-              show();
-            }}
-          />
-          <View style={{ flex: 1 }} />
+          <View>
+            <Button
+              style={styles.button}
+              title="console.log('hello')"
+              onPress={() => {
+                console.log('hello');
+              }}
+            />
+            <View style={{ height: 10 }} />
+            <Button
+              title="GET XHR (html)"
+              style={styles.button}
+              onPress={() => {
+                const xhr = new XMLHttpRequest();
+                xhr.open('GET', 'https://google.com');
+                xhr.send();
+              }}
+            />
+            <View style={{ height: 10 }} />
+            <View style={{ height: 10 }} />
+            <Button
+              title="GET XHR (json)"
+              style={styles.button}
+              onPress={() => {
+                const xhr = new XMLHttpRequest();
+                xhr.open('GET', 'https://api.github.com');
+                xhr.send();
+              }}
+            />
+            <View style={{ height: 10 }} />
+            <Button
+              title="POST XHR"
+              style={styles.button}
+              onPress={() => {
+                const xhr = new XMLHttpRequest();
+                xhr.open('POST', 'https://google.com');
+                xhr.setRequestHeader('content-type', 'application/json');
+                xhr.send(JSON.stringify({
+                  hello: 'world',
+                }));
+              }}
+            />
+            <View style={{ height: 10 }} />
+            <Button
+              title="Unhandled error"
+              style={styles.button}
+              onPress={() => {
+                const err = new Error('some error');
+                throw err;
+              }}
+            />
+            <View style={{ height: 30 }} />
+            <Button
+              title="Show modal"
+              style={styles.button}
+              onPress={() => {
+                show();
+              }}
+            />
+            <View style={{ height: 10 }} />
+          </View>
           <DevTool
             style={{
-              height: 300,
+              flex: 1,
             }}
           />
           <DevToolModal />
