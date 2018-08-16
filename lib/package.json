@@ -2,6 +2,9 @@
   "name": "react-native-debug-console",
   "version": "1.0.0-beta.8",
   "main": "src/index.js",
+  "repository": {
+    "url": "https://github.com/morten-olsen/react-native-debugger",
+  },
   "license": "MIT",
   "dependencies": {
     "react-native-json-tree": "^1.2.0",
