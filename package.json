@@ -2,6 +2,9 @@
   "name": "debugger",
   "version": "1.0.0",
   "main": "index.js",
+  "repository": {
+    "url": "https://github.com/morten-olsen/react-native-debugger",
+  },
   "license": "MIT",
   "devDependencies": {
     "create-react-native-app": "^1.0.0",
