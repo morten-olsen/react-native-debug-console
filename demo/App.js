@@ -6,6 +6,7 @@ import {
   Button,
   KeyboardAvoidingView,
   SafeAreaView,
+  AsyncStorage,
 } from 'react-native';
 import {
   DevTool,
@@ -26,11 +27,17 @@ xhr = new XMLHttpRequest();
 xhr.open('GET', 'https://google.com/sdfsfsdfsfdf');
 xhr.send();
 
+AsyncStorage.setItem('a', 'b');
+AsyncStorage.setItem('b', 'c');
+AsyncStorage.setItem('c', 'd');
+
 const t = new Promise((resolve, reject) => {
   setTimeout(() => {
     throw new Error('everything is broken');
   }, 1000);
 });
+
+
 
 export default class App extends React.Component {
   render() {
