@@ -14,10 +14,12 @@ import {
   log,
   network,
   show,
+  context,
 } from 'react-native-debug-console';
 
 network.attach();
 log.attach();
+context.hello = () => 'earth';
 
 console.log('fooo');
 let xhr = new XMLHttpRequest();
@@ -105,11 +107,11 @@ export default class App extends React.Component {
             />
             <View style={{ height: 10 }} />
           </View>
-          <DevTool
+          {/* <DevTool
             style={{
               flex: 1,
             }}
-          />
+          /> */}
           <DevToolModal />
         </KeyboardAvoidingView>
       </SafeAreaView>
