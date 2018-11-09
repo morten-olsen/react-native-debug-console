@@ -4,7 +4,7 @@
 
 React Native Debug Console is an easy to use network and console debug component and modal for react native, written purely in JavaScript
 
-[[demo]](https://expo.io/@mortenolsen/demo)
+[[demo]](https://snack.expo.io/@mortenolsen/react-native-debug-console)
 
 <img src="docs/assets/IMG_0232.PNG" height="400" />
 
