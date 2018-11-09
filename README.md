@@ -6,7 +6,7 @@ React Native Debug Console is an easy to use network and console debug component
 
 [[demo]](https://snack.expo.io/@mortenolsen/react-native-debug-console)
 
-<img src="docs/assets/IMG_0232.PNG" height="400" />
+<img src="docs/assets/IMG_0232.PNG" height="400" style="padding-right: 20px" /><img src="docs/assets/IMG_0233.PNG" height="400" />
 
 ## Installation
 
