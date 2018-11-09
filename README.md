@@ -59,7 +59,7 @@ const AppWithComponent = () => (
 Both `DevTool` and `DevToolModal` has a `includeStackTrace` property, which if set will print the stack trace on errors, not just the error message. `<DevTool includeStackTrace />`
 
 ## Custom views
-In addition to the included views (Console, Network and Storage), custom views can also be added using the `additionalTools` prop
+In addition to the included views (Console, Network and Storage), custom views can also be added using the `additionalTools` prop and can be accessed in the top tab bar, by sliding the bar
 
 ```javascript
 <DevToolModal
