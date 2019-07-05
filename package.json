@@ -1,16 +1,17 @@
 {
   "private": true,
   "workspaces": [
-    "demo",
-    "lib",
-    "tests"
+    "packages/*"
   ],
   "scripts": {
     "postinstall": "lerna bootstrap",
     "demo:ios": "lerna run --scope=react-native-debug-console-demo --stream ios",
-    "demo:web": "lerna run --scope=react-native-debug-console-demo --stream web"
+    "demo:web": "lerna run --scope=react-native-debug-console-demo --stream web",
+    "test": "lerna run --stream test"
   },
   "devDependencies": {
-    "lerna": "^3.0.3"
+    "lerna": "^3.0.3",
+    "jest": "^24.8.0",
+    "react-test-renderer": "^16.8.6"
   }
 }
