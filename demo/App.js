@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   StyleSheet,
-  Text,
   View,
   Button,
   KeyboardAvoidingView,
@@ -17,7 +16,7 @@ import {
 } from 'react-native-debug-console';
 
 network.attach();
-log.attach();
+log.attach(true);
 
 console.log('fooo');
 let xhr = new XMLHttpRequest();
@@ -117,8 +116,13 @@ export default class App extends React.Component {
             style={{
               flex: 1,
             }}
+            storageProvider={AsyncStorage}
+            context={global}
           />
-          <DevToolModal storage={AsyncStorage} />
+          <DevToolModal
+            storageProvider={AsyncStorage}
+            context={global}
+          />
         </KeyboardAvoidingView>
       </SafeAreaView>
     );
