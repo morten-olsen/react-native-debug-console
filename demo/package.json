@@ -11,6 +11,7 @@
     "postinstall": "expo-yarn-workspaces postinstall"
   },
   "dependencies": {
+    "@react-native-community/async-storage": "^1.5.0",
     "expo": "^33.0.0",
     "react": "16.8.3",
     "react-dom": "^16.8.6",
