@@ -6,7 +6,8 @@
   ],
   "scripts": {
     "postinstall": "lerna bootstrap",
-    "demo:ios": "lerna run --scope=react-native-debug-console-demo --stream ios"
+    "demo:ios": "lerna run --scope=react-native-debug-console-demo --stream ios",
+    "demo:web": "lerna run --scope=react-native-debug-console-demo --stream web"
   },
   "devDependencies": {
     "lerna": "^3.0.3"
