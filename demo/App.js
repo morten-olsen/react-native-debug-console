@@ -29,6 +29,14 @@ xhr = new XMLHttpRequest();
 xhr.open('GET', 'https://google.com/sdfsfsdfsfdf');
 xhr.send();
 
+
+console.log({
+  hello: {
+    world: 1,
+    earth: 2,
+  },
+});
+
 AsyncStorage.setItem('a', 'b');
 AsyncStorage.setItem('b', 'c');
 AsyncStorage.setItem('c', 'd');
@@ -107,12 +115,12 @@ export default class App extends React.Component {
             />
             <View style={{ height: 10 }} />
           </View>
-          {/* <DevTool
+          <DevTool
             style={{
               flex: 1,
             }}
-          /> */}
-          <DevToolModal />
+          />
+          <DevToolModal storage={AsyncStorage} />
         </KeyboardAvoidingView>
       </SafeAreaView>
     );

@@ -3,9 +3,8 @@ module.exports = function(api) {
   return {
     presets: ['babel-preset-expo'],
     plugins: [
-      ['module-resolver', {
+      [require.resolve('babel-plugin-module-resolver'), {
         alias: {
-          //'react-native-debug-console': '../lib',
           '@babel/runtime': '../node_modules/@babel/runtime',
         }
       }]

@@ -11,10 +11,9 @@
 		"styled-components": "^4.3.1"
   },
   "peerDependencies": {
-    "@react-native-community/async-storage": "^1.5.0",
 		"prop-types": "^15.6.0",
-		"react": "16.8.3",
-		"react-native": "0.59.8"
+		"react": "^16.8.3",
+		"react-native": "^0.59.8"
   },
   "devDependencies": {}
 }

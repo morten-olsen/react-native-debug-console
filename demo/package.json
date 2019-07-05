@@ -11,7 +11,6 @@
     "postinstall": "expo-yarn-workspaces postinstall"
   },
   "dependencies": {
-    "@react-native-community/async-storage": "^1.5.0",
     "expo": "^33.0.0",
     "react": "16.8.3",
     "react-dom": "^16.8.6",
@@ -24,7 +23,7 @@
     "babel-preset-expo": "^5.1.1",
     "expo-cli": "^2.21.2",
     "expo-yarn-workspaces": "^1.2.0",
-    "module-resolver": "^1.0.0"
+    "babel-plugin-module-resolver": "^3.2.0"
   },
   "private": true
 }
