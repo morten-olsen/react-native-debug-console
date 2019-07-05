@@ -1,4 +1,3 @@
-module.exports = {
-  preset: "react-native",
-  rootDir: '..',
-};
+const config = require('../../jest.config');
+
+module.exports = config;

@@ -5,6 +5,9 @@
   "repository": {
     "url": "https://github.com/morten-olsen/react-native-debugger"
   },
+  "scripts": {
+    "test": "jest"
+  },
   "license": "MIT",
   "dependencies": {
     "react-native-json-tree": "^1.2.0",

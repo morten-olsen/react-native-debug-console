@@ -2,18 +2,18 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import {
   DevTool,
-} from 'react-native-debug-console';
-import Console from 'react-native-debug-console/src/components/DevTool/Console';
-import ConsoleOutput, { Row as OutputRow} from 'react-native-debug-console/src/components/DevTool/Console/Output';
-import ConsoleInput from 'react-native-debug-console/src/components/DevTool/Console/Input';
+} from '../src';
+import Console from '../src/components/DevTool/Console';
+import ConsoleOutput, { Row as OutputRow} from '../src/components/DevTool/Console/Output';
+import ConsoleInput from '../src/components/DevTool/Console/Input';
 
-import Requests from 'react-native-debug-console/src/components/DevTool/Requests';
-import RequestsDetails from 'react-native-debug-console/src/components/DevTool/Requests/Details';
-import RequestsList from 'react-native-debug-console/src/components/DevTool/Requests/List';
+import Requests from '../src/components/DevTool/Requests';
+import RequestsDetails from '../src/components/DevTool/Requests/Details';
+import RequestsList from '../src/components/DevTool/Requests/List';
 
-import Storage from 'react-native-debug-console/src/components/DevTool/Storage';
-import StorageKeys from 'react-native-debug-console/src/components/DevTool/Storage/Keys';
-import StorageValues from 'react-native-debug-console/src/components/DevTool/Storage/Value';
+import Storage from '../src/components/DevTool/Storage';
+import StorageKeys from '../src/components/DevTool/Storage/Keys';
+import StorageValues from '../src/components/DevTool/Storage/Value';
 
 const createLog = () => {
   const listeners = [];

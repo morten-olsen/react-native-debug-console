@@ -13,7 +13,7 @@ import {
   log,
   network,
   show,
-} from 'react-native-debug-console';
+} from 'react-native-debug-console/src';
 
 network.attach();
 log.attach(true);

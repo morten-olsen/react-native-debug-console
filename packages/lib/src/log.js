@@ -65,12 +65,11 @@ class Log {
   }
 
   attach(keep) {
-    global.proxyConsole = proxyConsole;
     const redirected = Object.keys(proxyConsole).reduce((output, key) => ({
       ...output,
       [key]: keep ? (...args) => proxyConsole[key](...args) : () => {},
     }), {});
-    window.console = {
+    global.console = {
       ...redirected,
       error: (...data) => this.error(data, keep),
       warn: (...data) => this.warn(data, keep),
@@ -79,12 +78,14 @@ class Log {
       debug: (...data) => this.debug(data, keep),
       verbose: (...data) => this.debug(data, keep),
     };
-    if (global.ErrorUtils) {
+    /*if (global.ErrorUtils) {
       global.ErrorUtils.setGlobalHandler((err, fatal) => {
         this.error([err], keep);
       });
+    }*/
+    if (global.addEventListener) {
+      global.addEventListener('error', this.handleError);
     }
-    window.addEventListener('error', this.handleError);
   }
 
   detach() {
@@ -92,7 +93,9 @@ class Log {
       window.console[key] = proxies[key];
     });
 
-    window.removeEventListener('error', this.handleError);
+    if (global.removeEventListener) {
+      global.removeEventListener('error', this.handleError);
+    } 
   }
 }
 
