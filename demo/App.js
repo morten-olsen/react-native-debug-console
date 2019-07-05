@@ -14,12 +14,10 @@ import {
   log,
   network,
   show,
-  context,
 } from 'react-native-debug-console';
 
 network.attach();
 log.attach();
-context.hello = () => 'earth';
 
 console.log('fooo');
 let xhr = new XMLHttpRequest();
