@@ -2,7 +2,8 @@
   "private": true,
   "workspaces": [
     "demo",
-    "lib"
+    "lib",
+    "tests"
   ],
   "scripts": {
     "postinstall": "lerna bootstrap",
