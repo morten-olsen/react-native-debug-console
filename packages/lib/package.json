@@ -1,6 +1,6 @@
 {
   "name": "react-native-debug-console",
-  "version": "2.0.0-alpha.6",
+  "version": "2.0.0-alpha.7",
   "main": "lib/index.js",
   "react-native": "lib/native.js",
   "repository": {
@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "jest",
-    "bundle": "babel --copy-files --extensions '.ts,.tsx,.js' -d lib/native src",
+    "bundle": "babel --copy-files --extensions '.ts,.tsx,.js' -d lib src",
     "postpublish": "yarn run bundle"
   },
   "license": "MIT",
