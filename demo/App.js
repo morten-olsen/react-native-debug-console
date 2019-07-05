@@ -18,7 +18,7 @@ import {
 } from 'react-native-debug-console';
 
 network.attach();
-log.attach(true);
+log.attach();
 context.hello = () => 'earth';
 
 console.log('fooo');
