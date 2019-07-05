@@ -10,6 +10,7 @@
     "test": "lerna run --stream test"
   },
   "devDependencies": {
+    "@babel/cli": "^7.5.0",
     "@babel/plugin-proposal-class-properties": "^7.5.0",
     "@babel/preset-typescript": "^7.3.3",
     "jest": "^24.8.0",
