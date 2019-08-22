@@ -1,4 +1,6 @@
 # React Native Debug Console
+ 
+[![Maintainability](https://api.codeclimate.com/v1/badges/649636926c23c40f2404/maintainability)](https://codeclimate.com/github/morten-olsen/react-native-debug-console/maintainability) 
 
 ... and yes I am aware that it is a boring name
 
