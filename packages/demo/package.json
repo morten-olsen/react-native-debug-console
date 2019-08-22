@@ -1,0 +1,30 @@
+{
+  "name": "react-native-debug-console-demo",
+  "version": "2.0.0-alpha.7",
+  "main": "./Entry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject",
+    "postinstall": "expo-yarn-workspaces postinstall"
+  },
+  "dependencies": {
+    "expo": "^33.0.0",
+    "react": "16.8.3",
+    "react-dom": "^16.8.6",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz",
+    "react-native-debug-console": "^2.0.0-alpha.7",
+    "react-native-web": "0.11.4"
+  },
+  "devDependencies": {
+    "@babel/runtime": "^7.5.0",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "babel-preset-expo": "^5.1.1",
+    "expo-cli": "^2.21.2",
+    "expo-yarn-workspaces": "^1.2.0",
+    "react-art": "^16.8.6"
+  },
+  "private": true
+}

@@ -1,10 +1,22 @@
 {
-  "name": "debugger",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "postinstall": "lerna bootstrap",
+    "demo:ios": "lerna run --scope=react-native-debug-console-demo --stream ios",
+    "demo:web": "lerna run --scope=react-native-debug-console-demo --stream web",
+    "test": "lerna run --stream test",
+    "prerelease": "source .auth && lerna version prerelease --sign-git-tag -m \"chore(release): publish %s\" --conventional-commits --create-release github --force-publish"
+  },
   "devDependencies": {
-    "create-react-native-app": "^1.0.0",
-    "lerna": "^3.0.3"
+    "@babel/cli": "^7.5.0",
+    "@babel/plugin-proposal-class-properties": "^7.5.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "jest": "^24.8.0",
+    "lerna": "^3.0.3",
+    "react-test-renderer": "^16.8.6",
+    "typescript": "^3.5.2"
   }
 }
