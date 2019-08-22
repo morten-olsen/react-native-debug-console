@@ -1,6 +1,6 @@
 {
   "name": "react-native-debug-console",
-  "version": "2.0.0-alpha.7",
+  "version": "2.0.0-alpha.9",
   "main": "lib/index.js",
   "react-native": "lib/native.js",
   "repository": {
@@ -9,7 +9,7 @@
   "scripts": {
     "test": "jest",
     "bundle": "babel --copy-files --extensions '.ts,.tsx,.js' -d lib src",
-    "postpublish": "yarn run bundle"
+    "prepublish": "yarn run bundle"
   },
   "license": "MIT",
   "dependencies": {
@@ -19,6 +19,7 @@
   "peerDependencies": {
     "prop-types": "^15.6.0",
     "react": "^16.8.3",
-    "react-native": "^0.59.8"
+    "react-native": "^0.59.8",
+    "react-native-webview": "^6.9.0"
   }
 }

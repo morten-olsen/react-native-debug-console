@@ -4,6 +4,7 @@ import {
   View,
 } from 'react-native';
 import styled from 'styled-components/native';
+import { WebView } from 'react-native-webview';
 import {
   Emphasis,
   Fixed,
@@ -12,9 +13,6 @@ import JSONTree from 'react-native-json-tree';
 import Cell from '../../base/Cell';
 import CellHeader from '../../base/CellHeader';
 import Tab from '../Tab';
-
-const WebView = styled.WebView`
-`;
 
 const theme = {
   scheme: 'bright',
