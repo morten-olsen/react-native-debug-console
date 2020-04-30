@@ -8,7 +8,9 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "postinstall": "expo-yarn-workspaces postinstall"
+    "postinstall": "expo-yarn-workspaces postinstall",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "expo": "^33.0.0",
@@ -16,7 +18,8 @@
     "react-dom": "^16.8.6",
     "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz",
     "react-native-debug-console": "^2.0.0-alpha.7",
-    "react-native-web": "0.11.4"
+    "react-native-web": "0.11.4",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@babel/runtime": "^7.5.0",
@@ -26,5 +29,6 @@
     "expo-yarn-workspaces": "^1.2.0",
     "react-art": "^16.8.6"
   },
-  "private": true
+  "private": true,
+  "snyk": true
 }
