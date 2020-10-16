@@ -8,7 +8,7 @@ class Events {
   }
 
   unlisten(fn) {
-    this.listeners = this.listeners(l => l !== fn);
+    this.listeners = this.listeners.filter(l => l !== fn);
   }
 
   publish(type, data) {
