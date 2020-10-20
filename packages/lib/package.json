@@ -9,17 +9,20 @@
   "scripts": {
     "test": "jest",
     "bundle": "babel --copy-files --extensions '.ts,.tsx,.js' -d lib src",
-    "prepublish": "yarn run bundle"
+    "prepublish": "npm run snyk-protect && yarn run bundle",
+    "snyk-protect": "snyk protect"
   },
   "license": "MIT",
   "dependencies": {
     "react-native-json-tree": "^1.2.0",
-    "styled-components": "^5.0.0-beta.8"
+    "styled-components": "^5.0.0-beta.8",
+    "snyk": "^1.316.1"
   },
   "peerDependencies": {
     "prop-types": "^15.6.0",
     "react": "^16.8.3",
     "react-native": "^0.59.8",
     "react-native-webview": "^6.9.0"
-  }
+  },
+  "snyk": true
 }
