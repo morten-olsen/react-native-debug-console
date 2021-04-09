@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-alpha.16](https://github.com/morten-olsen/react-native-debug-console/compare/v2.0.0-alpha.11...v2.0.0-alpha.16) (2021-04-09)
+
+**Note:** Version bump only for package react-native-debug-console-demo
+
+
+
+
+
+# [2.0.0-alpha.15](https://github.com/morten-olsen/react-native-debug-console/compare/v2.0.0-alpha.11...v2.0.0-alpha.15) (2021-04-09)
+
+**Note:** Version bump only for package react-native-debug-console-demo
+
+
+
+
+
 # [2.0.0-alpha.14](https://github.com/morten-olsen/react-native-debug-console/compare/v2.0.0-alpha.11...v2.0.0-alpha.14) (2020-10-19)
 
 **Note:** Version bump only for package react-native-debug-console-demo
