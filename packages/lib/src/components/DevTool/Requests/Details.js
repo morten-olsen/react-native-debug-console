@@ -9,7 +9,7 @@ import {
   Emphasis,
   Fixed,
 } from '../../base/text';
-import JSONTree from 'react-native-json-tree';
+import JSONTree from '../../JSON';
 import Cell from '../../base/Cell';
 import CellHeader from '../../base/CellHeader';
 import Tab from '../Tab';

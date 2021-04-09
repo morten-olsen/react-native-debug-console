@@ -1,6 +1,6 @@
 import React, { Fragment, createRef } from 'react';
 import styled from 'styled-components/native';
-import JSONTree from 'react-native-json-tree';
+import JSONTree from '../../JSON';
 import {
   ScrollView
 } from 'react-native';
